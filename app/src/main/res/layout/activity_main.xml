@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kockadobás játék"
+        android:textAlignment="center"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Játékos"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textViewJatekosCim"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewJatekos"
+        android:layout_below="@id/textViewJatekosCim"
+        app:srcCompat="@drawable/kocka2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gép"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/textViewGepCim"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewGep"
+        android:layout_below="@id/textViewGepCim"
+        app:srcCompat="@drawable/kocka1"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eredmény:"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_below="@id/imageViewGep"
+        android:id="@+id/textViewEredmeny"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDobas"
+        android:text="Dobás"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"/>
+
+</RelativeLayout>
